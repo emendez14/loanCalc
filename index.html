@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">Loan Calculator</h1>
+        <form id="loan-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">%</span>
+                    <input type="number" class="form-control" id="interest" placeholder="Interest">
+                </div>
+            </div>
+            <div class="form-group">
+                    <input type="number" class="form-control" id="years" placeholder="Years to repay">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="calculate" class="butn-drk">
+            </div>
+        </form>
+        <!---loader here-->
+        <!--
+        <div id="loading">
+            <img src="img/loading.gif">
+        </div>
+        -->
+        <!--results-->
+        <div id="reults">
+            <h5>Results</h5>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Monthly Payment</span>
+                    <input type="number" class="form-control" id="monthly-payment" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Total Payment</span>
+                    <input type="number" class="form-control" id="total-payment" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Total Interest</span>
+                    <input type="number" class="form-control" id="total-interest" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
